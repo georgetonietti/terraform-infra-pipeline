@@ -54,7 +54,7 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker login -u ${{ secrets.DOCKER_NAME }} -p ${{ secrets.DOCKER_TOKEN }}
+          echo ${{ secrets.DOCKER_TOKEN }} | docker login -u ${{ secrets.DOCKER_NAME }} --password-stdin
           docker push ${{ inputs.docker-image }}
 
       - name: Setup Terraform
