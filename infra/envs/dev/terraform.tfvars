@@ -1,5 +1,5 @@
 bucket_name         = "dev-us-east-1-georgetonietti-pipeline"
-instance_type       = "t2.micro"
-ami_id              = "ami-0cae6d6fe6048ca2c"
+instance_type       = "t2.nano"
+ami_id              = "ami-0c101f26f147fa7fd"
 security_group_name = "dev-securitygroup"
 docker_image        = "georgetonietti/helloaws:latest"
