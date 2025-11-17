@@ -12,6 +12,9 @@ permissions:
 jobs:
   terraform:
     uses: ./.github/workflows/terraform.yml
+    secrets:
+      DOCKER_NAME: ${{ secrets.DOCKER_NAME }}
+      DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
     with:
       environment: dev
       aws-assume-role-arn: "arn:aws:iam::384711117426:role/github-actions-georgetonietti-pipeline"
