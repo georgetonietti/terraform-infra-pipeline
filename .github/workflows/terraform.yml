@@ -39,6 +39,9 @@ jobs:
           distribution: corretto
           java-version: 21
 
+      - name: Make Maven Wrapper executable
+        run: chmod +x app/mvnw
+
       - name: Build Java app
         run: |
           cd app
