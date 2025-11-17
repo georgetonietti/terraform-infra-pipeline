@@ -22,6 +22,12 @@ on:
         type: string
         required: true
 
+    secrets:
+      DOCKER_NAME:
+        required: true
+      DOCKER_TOKEN:
+        required: true
+
 jobs:
   terraform:
     runs-on: ubuntu-latest
