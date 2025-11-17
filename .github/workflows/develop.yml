@@ -18,3 +18,4 @@ jobs:
       aws-region: "us-east-1"
       aws-statefile-s3-bucket: "georgetonietti-us-east-1-terraform-statefile"
       aws-lock-dynamodb-table: "georgetonietti-us-east-1-terraform-lock"
+      docker-image: "georgetonietti/helloaws:latest"

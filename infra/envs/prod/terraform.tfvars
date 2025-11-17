@@ -1,1 +1,5 @@
-bucket_name="prod-us-east-1-georgetonietti-pipeline"
+bucket_name         = "prod-us-east-1-georgetonietti-pipeline"
+instance_type       = "t2.nano"
+ami_id              = "ami-0cae6d6fe6048ca2c"
+security_group_name = "prod-securitygroup"
+docker_image        = "georgetonietti/helloaws:latest"
